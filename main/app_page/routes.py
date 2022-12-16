@@ -18,7 +18,7 @@ def home():
     #     db.session.commit()
     #     flash('Your account has been created! You are now able to log in', 'success')
     #     return redirect(url_for('app_page.login'))
-    quote,author = quote_api.content,quote_api.author
+    quote,author = quote_api.get_quote()
     return render_template('main_page.html', title='Register',author = author, quote = quote)
 
 

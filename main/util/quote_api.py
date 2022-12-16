@@ -9,12 +9,12 @@ def get_quote():
 
     if response.status_code == 200:
         data = response.json()
-        content, author = data["content"], data["author"]
+        # content, author = data["content"], data["author"]
         return data["content"], data["author"]
     else:
         return None, None
 
-author,content = get_quote()
+# author,content = get_quote()
 
-scheduler.add_job(id="scheduled task", func=get_quote, trigger='interval', seconds=10,replace_existing = True)
-scheduler.start()
+# scheduler.add_job(id="scheduled task", func=get_quote, trigger='interval', seconds=10,replace_existing = True)
+# scheduler.start()
