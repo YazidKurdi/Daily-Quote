@@ -1,8 +1,5 @@
-from flask import Blueprint, redirect, url_for, flash, render_template, request
+from flask import Blueprint,render_template
 from main.util import quote_api
-# from main.models import User, Post
-# from main.users.forms import RegistartionForm, LoginForm, UpdateAccountForm
-# from main.users.util import save_picture
 
 app_page = Blueprint('app_page',__name__)
 
